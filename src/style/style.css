@@ -221,7 +221,7 @@ header {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 0.5) url("/assets/skor.jpg");
+  background: rgba(0, 0, 0, 0.5) url("/public/skor.jpg");
   background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
@@ -335,19 +335,19 @@ div.menu button:hover span:nth-child(2) {
 }
 
 .shoe-1 {
-  background-image: url("/assets/bild1.jpg");
+  background-image: url("/public/bild1.jpg");
 }
 
 .shoe-2 {
-  background-image: url("/assets/bild2.jpg");
+  background-image: url("/public/bild2.jpg");
 }
 
 .shoe-3 {
-  background-image: url("/assets/bild3.jpg");
+  background-image: url("/public/bild3.jpg");
 }
 
 .shoe-4 {
-  background-image: url("/assets/bild4.jpg");
+  background-image: url("/public/bild4.jpg");
 }
 
 .card:hover {
