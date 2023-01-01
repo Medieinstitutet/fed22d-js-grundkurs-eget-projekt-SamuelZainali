@@ -1,7 +1,7 @@
 const shoeContent = [
   {
     name: 'Air Force 1s',
-    img: 'public/bild1.png',
+    img: '/bild1.png',
     alt: 'Nike airforce skor',
     price: '999',
     amountTot: '',
