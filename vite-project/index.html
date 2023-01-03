@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- TODO: glöm ej att byta språk här -->
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/src/style/style.scss" />
+  <link rel="icon" type="image/ico" href="/public/fav1.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Projekt</title>
+</head>
+
+<body>
+  <div class="hamburgerOpenContainer">
+    <p class="closeHamburgerContainer">╳</p>
+    <div class="navContainer">
+      <nav class="navHamburger">
+        <ul>
+          <li><a href="#AboutUs" class="AboutUs">About</a></li>
+          <li><a href="#shoes" class="shoes">Shoes</a></li>
+          <li><a href="#ContactUs" class="ContactUs">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="/public/sneakolog.png" alt="Sneakos-Sneakers-logo" /></a>
+    </div>
+    <div class="search_box">
+      <input type="search" placeholder="Search for brand, color, etc."
+        alt="search-bar that says search for brand,color,etc.">
+    </div>
+    <nav class="nav__links">
+      <ul>
+        <li><a href="#AboutUs" class="AboutUs">About</a></li>
+        <li><a href="#shoes" class="shoes">Shoes</a></li>
+        <li><a href="#ContactUs" class="ContactUs">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="openCart" tabindex="0">
+      <i class="fa" style="font-size:24px">&#xf07a;</i>
+      <span class="lblCartCount"> </span>
+    </div>
+    <div class="menu">
+      <button class="menuOpener" aria-label="Menu-button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <div class="headerBackground" tabindex="0">
+    <h1>The world's hottest sneakers & apparel are all at Sneako</h1>
+  </div>
+  <main>
+    <section class="AboutUsContainer" id="AboutUs" tabindex="0">
+      <img src="/public/aboutusbild.jpg"
+        alt="About us text that says, Sneako, Inc. leads the celebration of sneaker and youth culture around the globe through a portfolio of brands including Sneako, Kids Sneako, Champs Sports, atmos. 
+
+
+With approximately 2,800 retail stores in 28 countries across North America, Europe, Asia,  as well as websites and mobile apps, the Company's purpose is to inspire and empower youth culture around the world. " />
+    </section>
+    <section class="container" id="shoes">
+      <!-- <div class="card">
+        <div class="card-image shoe-1"></div>
+        <h2>NIKE</h2>
+        <p>Airforce 1s</p>
+        <p>399 kr</p>
+      </div>
+      <div class="card">
+        <div class="card-image shoe-2"></div>
+        <h2>BALENCIAGA</h2>
+        <p>Beige X-Pander Sneakers</p>
+        <p>699 kr</p>
+      </div>
+      <div class="card">
+        <div class="card-image shoe-3"></div>
+        <h2>CDG x Converse</h2>
+        <p>Converse Chuck Taylor 70</p>
+        <P>499 kr</P>
+      </div>
+      <div class="card">
+        <div class="card-image shoe-4"></div>
+        <h2>CROCS</h2>
+        <p>Classic Clog Lightning McQueen</p>
+        <p>999 kr</p>
+      </div> -->
+    </section>
+
+    <div class="openCardContainer">
+      <div class="cardContainerContent">
+        <!--
+                    Designed for Javascript Code
+                -->
+      </div>
+      <div class="buttonSizes">
+        <button tabindex="0">39</button>
+        <button tabindex="0">40</button>
+        <button tabindex="0">41</button>
+        <button tabindex="0">42</button>
+        <button tabindex="0">43</button>
+      </div>
+      <div class="buyOut">
+        <select name="number" class="numberOfShoes">
+          <option tabindex="0" value="1" selected="selected"> 1 </option>
+          <option tabindex="0" value="2"> 2 </option>
+          <option tabindex="0" value="3"> 3 </option>
+          <option tabindex="0" value="4"> 4 </option>
+          <option tabindex="0" value="5"> 5 </option>
+        </select>
+        <button class="addToCart" tabindex="0">Lägg till</button>
+      </div>
+    </div>
+    <div class="shoppingContainer">
+      <h3 tabindex="0">Shopping cart</h3>
+      <hr>
+      <div class="shoppingContainerContent">
+        <div class="itemAddRemove">
+          <button tabindex="0" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+          <input tabindex="0" class="quantity" min="0" placeholder="0" name="numberOfItems" value="1" type="number">
+          <button tabindex="0" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+            class="plus"></button>
+        </div>
+      </div>
+      <h3 class="shoppingTotalPrice"></h3>
+      <button class="OpenFormContainer" tabindex="0">Till kassan</button>
+
+    </div>
+    <div class="checkoutContainer">
+      <form class="formContainer" action="">
+        <div class="checkoutfirstColumn">
+          <h3 tabindex="0"> Billing Address </h3>
+          <label tabindex="0" for="fullname"><i class="fa fa-user"></i> Full Name </label>
+          <input tabindex="0" type="text" id="firstname" name="firstname" required placeholder="Samuel Zainali">
+          <span tabindex="0" role="alert" class="nameError" aria-hidden="true"> Please enter First Name
+          </span>
+
+          <label tabindex="0" for="email"> <i class="fa fa-envelope"></i> Email </label>
+          <input tabindex="0" type="text" id="email" name="email" required placeholder="samzain@example.com">
+          <span tabindex="0" role="alert" class="nameError" aria-hidden="true"> Please enter Email </span>
+
+          <label tabindex="0" for="adr"> <i class="fa fa-address-card-o"></i> Address</label>
+          <input tabindex="0" type="text" id="adr" name="address" required placeholder="Norrlundagränd 22C">
+          <span tabindex="0" role="alert" class="nameError" aria-hidden="true"> Please enter address </span>
+
+          <label tabindex="0" for="city"> <i class="fa fa-institution"></i> City </label>
+          <input tabindex="0" type="text" id="city" name="city" required placeholder="Stockholm">
+          <span tabindex="0" role="alert" class="nameError" aria-hidden="true"> Please enter city</span>
+
+          <label tabindex="0" for="zip"> Zip</label>
+          <input tabindex="0" type="text" id="zip" name="zip" required placeholder="19132">
+          <span tabindex="0" role="alert" class="nameError" aria-hidden="true"> Please enter zip </span>
+
+        </div>
+        <div class="checkoutsecondColumn">
+          <h3 tabindex="0"> Payment </h3>
+          <label for="fname" tabindex="0"> Accepted Cards </label>
+          <div class="icon-container">
+            <i class="fa fa-cc-visa" style="color:navy;"></i>
+            <i class="fa fa-cc-amex" style="color:blue;"></i>
+            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            <i class="fa fa-cc-discover" style="color:orange;"></i>
+          </div>
+          <label tabindex="0" for="cname"> Name on Card</label>
+          <input tabindex="0" type="text" id="cname" name="cardname" required placeholder="Sam Herling">
+          <span tabindex="0" role="alert" class="nameError" aria-hidden="true"> Please enter your name </span>
+
+          <label tabindex="0" for="ccnum"> Credit card number </label>
+          <input tabindex="0" type="text" id="ccnum" name="cardnumber" required placeholder="1111-2222-3333-4444">
+          <span tabindex="0" role="alert" class="nameError" aria-hidden="true"> Please enter cardnumber
+          </span>
+
+          <label tabindex="0" for="expmonth"> Exp Month </label>
+          <input tabindex="0" type="text" id="expmonth" name="expmonth" required placeholder="September">
+          <span tabindex="0" role="alert" class="nameError" aria-hidden="true"> Please enter expiry month
+          </span>
+
+          <div class="secondColumnSplit">
+            <div class="secondColumnFirstRow">
+              <label tabindex="0" for="expyear"> Exp Year </label>
+              <input tabindex="0" type="text" id="expyear" name="expyear" required placerholder="2019">
+              <span tabindex="0" role="alert" class="nameError" aria-hidden="true"> Please enter expiry
+                year </span>
+            </div>
+            <div class="secondColumnSecondRow">
+              <label tabindex="0" for="cvv"> CVV </label>
+              <input tabindex="0" type="text" id="cvv" name="cvv" required placerholder="352">
+              <span tabindex="0" role="alert" class="nameError" aria-hidden="true"> Please enter CVV
+              </span>
+            </div>
+          </div>
+          <input tabindex="0" type="submit" value="Checkout" class="checkOutButton">
+        </div>
+      </form>
+    </div>
+    <button tabindex="0" class="scrollTop" title="Go to top">↑</button>
+
+    <section class="ContactUsContainer" id="ContactUs">
+      <h3 tabindex="0">Contact Us
+      </h3>
+      <p tabindex="0">Phone - 079-015 93 00 <br>
+        We're available every day from 6 am to 11:59 pm (CST)</p>
+      <p tabindex="0">Email - zainalisamuel@gmail.com</p>
+    </section>
+    <div class="completedOrder">
+      <img tabindex="0" width=600px height=597px src="public/thankyouimage.jpg"
+        alt="Picture that says thank you for your order.">
+    </div>
+  </main>
+
+  <!-- TODO
+    - Validera HTML (kopiera den renderade HTML-koden): https://validator.w3.org/#validate_by_input
+    - Kontrollera tillgänglighet: https://www.a11yproject.com/checklist/ & Chrome Lighthouse/Firefox Accessibility Tools
+    - Validera genererade CSS: https://jigsaw.w3.org/css-validator/#validate_by_input
+    -->
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

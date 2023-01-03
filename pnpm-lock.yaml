@@ -10,7 +10,7 @@ specifiers:
   eslint-plugin-promise: ^6.0.0
   postcss-scss: ^4.0.6
   prettier: ^2.8.0
-  sass: ^1.56.1
+  sass: ^1.56.2
   stylelint: ^14.15.0
   stylelint-config-prettier: ^9.0.4
   stylelint-config-standard: ^29.0.0
@@ -29,14 +29,14 @@ devDependencies:
   eslint-plugin-promise: 6.1.1_eslint@8.28.0
   postcss-scss: 4.0.6_postcss@8.4.19
   prettier: 2.8.0
-  sass: 1.56.1
+  sass: 1.57.1
   stylelint: 14.15.0
   stylelint-config-prettier: 9.0.4_stylelint@14.15.0
   stylelint-config-standard: 29.0.0_stylelint@14.15.0
   stylelint-config-standard-scss: 6.1.0_a37symlv4urgexnspmy4gyeh7i
   stylelint-scss: 4.3.0_stylelint@14.15.0
   typescript: 4.9.3
-  vite: 3.2.4_sass@1.56.1
+  vite: 3.2.4_sass@1.57.1
 
 packages:
 
@@ -2358,8 +2358,8 @@ packages:
       is-regex: 1.1.4
     dev: true
 
-  /sass/1.56.1:
-    resolution: {integrity: sha512-VpEyKpyBPCxE7qGDtOcdJ6fFbcpOM+Emu7uZLxVrkX8KVU/Dp5UF7WLvzqRuUhB6mqqQt1xffLoG+AndxTZrCQ==}
+  /sass/1.57.1:
+    resolution: {integrity: sha512-O2+LwLS79op7GI0xZ8fqzF7X2m/m8WFfI02dHOdsK5R2ECeS5F62zrwg/relM1rjSLy7Vd/DiMNIvPrQGsA0jw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -2779,7 +2779,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite/3.2.4_sass@1.56.1:
+  /vite/3.2.4_sass@1.57.1:
     resolution: {integrity: sha512-Z2X6SRAffOUYTa+sLy3NQ7nlHFU100xwanq1WDwqaiFiCe+25zdxP1TfCS5ojPV2oDDcXudHIoPnI1Z/66B7Yw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2808,7 +2808,7 @@ packages:
       postcss: 8.4.19
       resolve: 1.22.1
       rollup: 2.79.1
-      sass: 1.56.1
+      sass: 1.57.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
